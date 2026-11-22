@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FluentX | Aurelia Rompas</title>
-  <meta name="description" content="A tuition centre concept combining AI learning tools, gamification and VR/AR.">
+  <meta name="description" content="An English tuition centre concept that uses AI fingerprint recognition to personalise learning, with a redesigned business model.">
   <meta property="og:title" content="FluentX | Aurelia Rompas">
-  <meta property="og:description" content="A tuition centre concept combining AI learning tools, gamification and VR/AR.">
+  <meta property="og:description" content="An English tuition centre concept that uses AI fingerprint recognition to personalise learning, with a redesigned business model.">
   <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +44,7 @@
       <a class="back-link" href="../index.html#projects"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3L5 8l5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>All projects</a>
       <p class="project-org">NTU AI and Entrepreneurship Programme</p>
       <h1>FluentX</h1>
-      <p class="lede">A tuition centre concept combining AI learning tools, gamification and VR/AR.</p>
+      <p class="lede">An English tuition centre concept that uses AI fingerprint recognition to personalise learning, with a redesigned business model.</p>
       <dl class="facts">
           <div><dt>Role</dt><dd>Team member</dd></div>
           <div><dt>Recognition</dt><dd>Best Business Idea</dd></div>
@@ -67,55 +67,81 @@
       <article class="detail-main">
         <section>
           <h2>Overview</h2>
-          <p>FluentX is a tuition centre business idea that brings together AI-driven learning tools, gamification, VR/AR and fingerprint-based attendance. It won Best Business Idea at NTU&#x27;s Artificial Intelligence and Entrepreneurship Programme.</p>
-        </section>
-
-        <section>
-          <h2>What I did</h2>
+          <p>FluentX is a concept for an English test-prep tuition centre (TOEFL, IELTS and Cambridge exams). Our five-person team redesigned the business around technology and proposed an AI system that uses a fingerprint scan for security, attendance and personalised study plans. It won Best Business Idea at NTU&#x27;s AI and Entrepreneurship Programme.</p>
           <ul>
-            <li>Conceived FluentX, a tuition centre business idea integrating AI-driven learning tools, gamification, VR/AR technologies, and CNN-based fingerprint recognition for security, attendance tracking and personalised learning through DMIT.</li>
+            <li>Mapped the business before and after the change across 8 building blocks, from partners to revenue.</li>
+            <li>Proposed a two-step AI pipeline: an image-recognition model reads the fingerprint, then a second model turns the result into a study plan.</li>
+            <li>Showed how one scan could cover three day-to-day jobs: access control, attendance and class placement.</li>
           </ul>
         </section>
 
         <section>
-          <h2>Result</h2>
-          <div class="result-callout"><strong>Best</strong><span>Business Idea award</span></div>
+          <h2>The problem</h2>
+          <p>A traditional test-prep centre runs on offline classes, tutors and study materials. Its contact with families is limited, mostly fee questions and last-minute cancellations. That makes it hard to personalise teaching, track progress or reach students beyond the classroom.</p>
         </section>
 
-        <!-- ============ OPTIONAL: gallery ============
-             Put images in assets/img/projects/ and remove the comment markers to show them.
+        <section>
+          <h2>My role</h2>
+          <p>I was one of five team members. With my teammates, I analysed the existing business model and co-developed the before-and-after Business Model Canvas, working out how each part of the business would change once AI, VR/AR and a mobile app were added.</p>
+        </section>
+
+        <section>
+          <h2>Approach</h2>
+          <ul>
+            <li><strong>1. Mapped the current business.</strong> We laid out a &ldquo;before&rdquo; Business Model Canvas, a one-page map of partners, activities, resources, channels, customer relationships, value, costs and revenue.</li>
+            <li><strong>2. Redesigned each block.</strong> For example, partners grew from tutors and parents to schools, universities, publishers, investors and web developers. The target age range widened from 10&ndash;18 to 3&ndash;21.</li>
+            <li><strong>3. Compared biometric options.</strong> We compared fingerprint, face, hand, iris and voice recognition. Fingerprints rated high on distinctiveness, permanence and performance, so we chose them.</li>
+            <li><strong>4. Explored fingerprint matching.</strong> We walked through a recognition pipeline on a dataset of 6,000 fingerprint images from 600 people: cleaning and augmenting the images (rotations, shifts, flips, crops), matching key features, and scoring the best match. We also studied a published 15-layer CNN (convolutional neural network, a standard model for recognising images) for classifying fingerprints.</li>
+            <li><strong>5. Proposed the AI pipeline.</strong> The CNN classifies the fingerprint. An MLP (multi-layer perceptron, a simple neural network) then maps it to a learning profile, and a second MLP maps that profile to a personalised study plan. The profile step uses DMIT, a fingerprint-based test that claims to identify learning styles. We mocked up an example student profile and a first-week IELTS study plan.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Results and impact</h2>
+          <div class="result-callout"><strong>Best</strong><span>Business Idea award</span></div>
+          <ul>
+            <li><strong>6 major changes</strong> to the business: online as well as offline classes, games and VR in lessons, a web app for parents and tutors, partnerships with companies and content providers, seminars in schools and universities, and sponsorship from authors and companies.</li>
+            <li><strong>3 uses for one fingerprint scan:</strong> access control for different areas of the centre, real-time attendance logs for staff and students, and sorting students into classes by learning profile.</li>
+            <li><strong>2 new revenue streams:</strong> licensing the centre&#x27;s digital materials to other schools, and targeted ads on the online platform and app.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Key takeaways</h2>
+          <ul>
+            <li>Adding technology changes the whole business, not just one part. Costs move towards AI platforms, VR/AR equipment and cloud storage, and new ways to earn money open up.</li>
+            <li>Choosing a sensor is a trade-off. Fingerprints offered the best balance of accuracy, stability over time and practicality among the five options we compared.</li>
+            <li>One data point can serve several operational needs. A single scan supports security, attendance tracking and class planning.</li>
+          </ul>
+        </section>
+
         <section>
           <h2>Gallery</h2>
           <div class="gallery">
             <figure>
-              <img src="../assets/img/projects/fluentx-1.png" alt="Describe what the screenshot shows">
-              <figcaption>Short caption</figcaption>
+              <img src="../assets/img/projects/fluentx-dmit-proposal-flow.webp" alt="Flowchart: a fingerprint image goes to a CNN for feature classification, then an MLP matches it to a personality type, then a second MLP matches that to a personalised study plan and curriculum" width="1400" height="681" loading="lazy">
+              <figcaption>Proposed pipeline: from fingerprint scan to personalised study plan</figcaption>
             </figure>
             <figure>
-              <img src="../assets/img/projects/fluentx-2.png" alt="Describe what the screenshot shows">
-              <figcaption>Short caption</figcaption>
+              <img src="../assets/img/projects/fluentx-fingerprint-matching.webp" alt="A test fingerprint beside its closest match from the dataset, with coloured lines joining matching features and a best-match score of 62.5" width="1400" height="679" loading="lazy">
+              <figcaption>Fingerprint matching: features joined between a test print and its best match</figcaption>
             </figure>
           </div>
         </section>
-        -->
       </article>
 
       <aside class="detail-aside">
         <section>
           <h2>Tools and methods</h2>
-          <ul class="tag-row"><li>Business modelling</li><li>CNN</li><li>VR/AR</li><li>Gamification</li></ul>
+          <ul class="tag-row"><li>Business Model Canvas</li><li>Fingerprint recognition</li><li>CNN</li><li>MLP</li><li>Image augmentation</li><li>VR/AR</li><li>Gamification</li></ul>
         </section>
 
-        <!-- ============ OPTIONAL: links ============
-             Add a demo, GitHub repo, report or slides, then remove the comment markers.
         <section>
           <h2>Links</h2>
           <ul class="link-list">
-            <li><a href="https://github.com/YOUR-USERNAME/REPO" target="_blank" rel="noopener">Source code on GitHub</a></li>
-            <li><a href="../assets/docs/fluentx-report.pdf" target="_blank" rel="noopener">Read the report (PDF)</a></li>
+            <li><a href="../assets/docs/fluentx-best-business-idea-letter.pdf" target="_blank" rel="noopener">Best Business Idea award letter (PDF)</a></li>
           </ul>
         </section>
-        -->
       </aside>
     </div>
 
